@@ -3,6 +3,7 @@
   "displayName": "mura-env",
   "description": "Documentation and code completion for Mura environment variables",
   "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "vscode": "^1.57.0"
   },
