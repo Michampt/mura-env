@@ -16,7 +16,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:yaml",
+    "onLanguage:config",
     "onStartupFinished"
   ],
   "main": "./extension.js",
@@ -24,7 +24,17 @@
     "commands": [],
     "capabilities": {
       "hoverProvider": "true"
-    }
+    },
+    "languages": [
+      {
+        "id": "config",
+        "extensions": [
+          ".yml",
+          ".yaml",
+          ".ini"
+        ]
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
