@@ -1,10 +1,13 @@
 {
   "name": "mura-env",
-  "displayName": "mura-env",
-  "description": "Documentation and code completion for Mura environment variables",
+  "displayName": "Mura Configuration Helper",
+  "description": "Hover documentation for Mura environment variables and settings",
   "version": "0.1.0",
   "license": "SEE LICENSE IN LICENSE",
   "publisher": "michampt",
+  "licenser": {
+    "author": "Michael Hampton"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Michampt/mura-env"
@@ -16,10 +19,11 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:config",
+    "onLanguage:yml",
+    "onLanguage:ini",
     "onStartupFinished"
   ],
-  "main": "./extension.js",
+  "main": "src/extension.js",
   "contributes": {
     "commands": [],
     "capabilities": {
@@ -27,11 +31,17 @@
     },
     "languages": [
       {
-        "id": "config",
+        "id": "yml",
         "extensions": [
           ".yml",
-          ".yaml",
-          ".ini"
+          ".yaml"
+        ]
+      },
+      {
+        "id": "ini",
+        "extensions": [
+          ".ini",
+          "ini.cfm"
         ]
       }
     ]
