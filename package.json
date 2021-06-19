@@ -21,6 +21,7 @@
   "activationEvents": [
     "onLanguage:yml",
     "onLanguage:ini",
+    "onLanguage:yaml",
     "onStartupFinished"
   ],
   "main": "src/extension.js",
