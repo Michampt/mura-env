@@ -1,6 +1,5 @@
 const vscode = require('vscode');
 
-// const map = require('./items.js')
 const { map } = require('./items')
 console.log(map)
 
@@ -30,7 +29,6 @@ function activate(context) {
 			}
 		}
 	});
-	context.subscriptions.push(ymlDisposable);
 
 	let iniDisposable = vscode.languages.registerHoverProvider('ini', {
 		provideHover(document, position, token) {
@@ -40,7 +38,8 @@ function activate(context) {
 			return getInfoINI(word)
 		}
 	});
-	context.subscriptions.push(iniDisposable);
+
+	context.subscriptions.push(iniDisposable, ymlDisposable);
 }
 
 function deactivate() {}
