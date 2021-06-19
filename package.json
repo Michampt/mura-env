@@ -41,7 +41,7 @@
         "id": "ini",
         "extensions": [
           ".ini",
-          "ini.cfm"
+          ".ini.cfm"
         ]
       }
     ]

@@ -19,7 +19,7 @@ function getInfoYML(splitWord) {
 
 function activate(context) {
 
-	let plainTextDisposable = vscode.languages.registerHoverProvider('yml', {
+	let ymlDisposable = vscode.languages.registerHoverProvider('yml', {
 		provideHover(document, position, token) {
 			const wordRange = document.getWordRangeAtPosition(position);
 			const word = document.getText(wordRange);
@@ -30,9 +30,9 @@ function activate(context) {
 			}
 		}
 	});
-	context.subscriptions.push(plainTextDisposable);
+	context.subscriptions.push(ymlDisposable);
 
-	let yamlDisposable = vscode.languages.registerHoverProvider('ini', {
+	let iniDisposable = vscode.languages.registerHoverProvider('ini', {
 		provideHover(document, position, token) {
 			const wordRange = document.getWordRangeAtPosition(position);
 			const word = document.getText(wordRange);
@@ -40,7 +40,7 @@ function activate(context) {
 			return getInfoINI(word)
 		}
 	});
-	context.subscriptions.push(yamlDisposable);
+	context.subscriptions.push(iniDisposable);
 }
 
 function deactivate() {}
