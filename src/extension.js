@@ -14,7 +14,7 @@ function getInfo(word) {
 
 function activate(context) {
 
-	let ymlDisposable = vscode.languages.registerHoverProvider('yml', {
+	let ymlDisposable = vscode.languages.registerHoverProvider('yaml', {
 		provideHover(document, position, token) {
 			const wordRange = document.getWordRangeAtPosition(position);
 			const word = document.getText(wordRange);
