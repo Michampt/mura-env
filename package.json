@@ -62,5 +62,8 @@
     "mocha": "^8.4.0",
     "typescript": "^4.3.2",
     "vscode-test": "^1.5.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
