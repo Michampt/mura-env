@@ -3,7 +3,7 @@
 This extension is to easily see what MURA_ environment variables do as per Mura's documentation found at https://docs.murasoftware.com/v10/extending-mura/mura-file-structure/#section-the-settingsinicfm-file
 
 
-![yml](docs/images/ymlhover1.png)  
+![yml](docs/images/ymlhover.png)  
 
 
-![ini](docs/images/inicfmhover1.png)  
+![ini](docs/images/inicfmhover.png)  
