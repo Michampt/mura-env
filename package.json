@@ -2,7 +2,7 @@
   "name": "mura-env",
   "displayName": "Mura Configuration Helper",
   "description": "Hover documentation for Mura environment variables and settings",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "license": "SEE LICENSE IN LICENSE",
   "publisher": "michampt",
   "licenser": {
